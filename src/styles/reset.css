@@ -1,0 +1,50 @@
+/* 重置样式，确保菜单贴合浏览器左侧 */
+.el-menu {
+  border-right: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.el-menu-item, .el-sub-menu__title {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+.el-menu--collapse {
+  width: 64px !important;
+}
+
+/* 去除所有可能的边距 */
+html, body, #app {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+/* 确保所有容器没有边距 */
+.app-wrapper, .sidebar-container, .main-container, .content-container, .top-header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 确保布局容器充满整个视口宽度 */
+.app-wrapper, .top-header, .content-wrapper {
+  width: 100vw !important;
+}
+
+/* 确保Element Plus组件没有多余边距 */
+.el-header, .el-footer, .el-main, .el-aside {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* 修复可能的溢出问题 */
+* {
+  box-sizing: border-box !important;
+} 
