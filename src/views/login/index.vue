@@ -244,20 +244,26 @@ html, body, #app {
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: #1a237e;
 }
 </style>
 
 <style scoped>
 .login-container {
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
+  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   margin: 0;
   padding: 0;
@@ -268,24 +274,22 @@ html, body, #app {
   background: linear-gradient(135deg, #1a237e, #283593, #303f9f, #3949ab, #3f51b5);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   overflow: hidden;
   box-sizing: border-box;
 }
 
 .login-content {
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   z-index: 10;
-  flex: 1;
 }
 
 @keyframes gradientAnimation {
