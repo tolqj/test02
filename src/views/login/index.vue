@@ -64,7 +64,7 @@ const handleLogin = async (formEl: FormInstance | undefined) => {
           localStorage.removeItem('rememberedPassword')
         }
         
-        ElMessage.success('登录成功')
+        ElMessage.success('登录成功了')
         
         // 处理重定向
         const redirect = route.query.redirect as string
